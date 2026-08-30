@@ -1,0 +1,10 @@
+services:
+  just-play:
+    build: .
+    container_name: just-play
+    restart: unless-stopped
+    ports:
+      - "3141:80"        # Change 3141 to any port you prefer
+    # Optional: if you want to edit files without rebuilding, uncomment:
+    # volumes:
+    #   - ./:/usr/share/nginx/html:ro

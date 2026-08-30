@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Just Play 🎹</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-min.js"></script>
+</head>
+<body>
+
+<div class="player-wrap" id="player-wrap">
+
+  <header class="player-header">
+    <a href="index.html" class="btn-back">← Songs</a>
+    <div class="header-info">
+      <h1 id="song-title">Loading…</h1>
+      <p class="header-sub" id="song-sub"></p>
+    </div>
+  </header>
+
+  <div class="dots-bar" id="dots-bar"></div>
+
+  <div class="player-body">
+    <div class="notation-col">
+      <div id="notation">
+        <div class="loading-box"><div class="spinner"></div><p>Loading score…</p></div>
+      </div>
+    </div>
+    <div class="side-col">
+      <div class="tips-card">
+        <div class="tips-title">💡 Practice Tips</div>
+        <ul class="tips-list" id="tips-list"><li>Loading…</li></ul>
+      </div>
+      <div class="audio-wrap">
+        <div id="audio-player"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="player-footer">
+    <button class="btn btn-nav" id="btn-prev" onclick="prevSection()" disabled>← Prev</button>
+    <button class="btn btn-got-it" id="btn-got-it" onclick="markDone()">✓ Got it!</button>
+    <button class="btn btn-nav" id="btn-next" onclick="nextSection()">Next →</button>
+  </footer>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="js/songs.js"></script>
+<script src="js/player.js"></script>
+</body>
+</html>
