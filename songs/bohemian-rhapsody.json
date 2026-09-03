@@ -6,64 +6,64 @@
   "difficulty": 2,
   "emoji": "👑",
   "color": "#d97706",
-  "description": "Queen's timeless masterpiece in its true, original key of Bb major. Features the unforgettable vocal ballad melody everyone loves.",
-  "generalTip": "Key of Bb major (Bb and Eb). Sing the words in your head as you play to capture Freddie Mercury's phrasing.",
-  "fullAbc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nF6 G2 | F2 E2 D4- | D2 z2 D2 E2 |\nG2 G G F2 E F | G2 F F F4 |\nF6 D F | B4- B2 z F | B B B B A2 B2 | c8 |\nE6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |\nC D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]",
+  "description": "Queen's timeless masterpiece arranged for two hands (Grand Staff) in the original key of Bb major. Includes the legendary piano intro vamp and Freddie's vocal ballad melody.",
+  "generalTip": "Play with both hands! Left hand plays the supporting bass roots while the right hand plays the iconic piano vamp and vocal melody. Key of Bb (Bb and Eb).",
+  "fullAbc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [D2F2B2] [D2F2B2] [D2F2B2] [D2F2B2] | [C2F2A2] [C2F2A2] [C2F2A2] [C2F2A2] | [D2G2B2] [D2G2B2] [D2G2B2] [D2G2B2] | [C4E4G4B4] [C4F4A4] |\n[V:LH] B,,8 | F,,8 | G,,8 | C,4 F,,4 |\n[V:RH] F6 G2 | F2 E2 D4- | D2 z2 D2 E2 | G2 G G F2 E F | G2 F F F4 |\n[V:LH] B,,8 | G,,8 | C,8 | F,,8 | B,,8 |\n[V:RH] F6 D F | B4- B2 z F | B B B B A2 B2 | c8 |\n[V:LH] B,,8 | G,,8 | C,8 | F,,8 |\n[V:RH] E6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |\n[V:LH] E,8 | B,,8 | G,,8 | C,8 |\n[V:RH] C D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]\n[V:LH] _A,,8 | E,8 | B,,8 | F,,8 |]",
   "sections": [
     {
       "id": "s1",
-      "label": "\"Mama, just killed a man\"",
+      "label": "The Iconic Piano Intro Vamp",
       "bars": "1–4",
       "tips": [
-        "👑 The world's most famous rock ballad opening: \"Mama, just killed a man\"",
-        "👆 Start on F with Finger 2, step up to G (Finger 3) on \"just\", then down to Eb and D",
-        "🎵 \"Put a gun against his head\": rapid repeated G notes stepping down through F and Eb"
+        "👑 The most famous piano intro in rock history!",
+        "🎹 Left hand holds resonant bass notes (Bb -> F -> G -> C -> F)",
+        "👆 Right hand rocks the four-note chords: Bb (D-F-Bb) -> F (C-F-A) -> Gm (D-G-Bb) -> C7 into F"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Just Killed a Man\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nF6 G2 | F2 E2 D4- | D2 z2 D2 E2 |\nG2 G G F2 E F | G2 F F F4 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — The Iconic Piano Intro\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [D2F2B2] [D2F2B2] [D2F2B2] [D2F2B2] | [C2F2A2] [C2F2A2] [C2F2A2] [C2F2A2] | [D2G2B2] [D2G2B2] [D2G2B2] [D2G2B2] | [C4E4G4B4] [C4F4A4] |]\n[V:LH] B,,8 | F,,8 | G,,8 | C,4 F,,4 |]"
     },
     {
       "id": "s2",
-      "label": "\"Life had just begun\"",
-      "bars": "5–8",
+      "label": "\"Mama, just killed a man\"",
+      "bars": "5–9",
       "tips": [
-        "👆 Finger 2 on F, Finger 1 on D for \"life had\" — then leap to Bb (Finger 4) on \"just begun\"",
-        "🎵 \"Now I've gone and thrown it all away\": four steady Bb notes stepping down to A then climbing to high C",
-        "✨ Hold the long high C note for the full 4 beats"
+        "🎤 Freddie's iconic vocal enters: \"Mama, just killed a man\"",
+        "👆 Right hand: F steps up to G on \"just\", down to Eb and D on \"killed a man\"",
+        "🎹 Left hand: steady bass roots support the voice (Bb -> Gm -> Cm -> F -> Bb)"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Life Had Just Begun\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nF6 D F | B4- B2 z F | B B B B A2 B2 | c8 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Just Killed a Man\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] F6 G2 | F2 E2 D4- | D2 z2 D2 E2 | G2 G G F2 E F | G2 F F F4 |]\n[V:LH] B,,8 | G,,8 | C,8 | F,,8 | B,,8 |]"
     },
     {
       "id": "s3",
-      "label": "\"Mama, ooh...\"",
-      "bars": "9–12",
+      "label": "\"Life had just begun\"",
+      "bars": "10–13",
       "tips": [
-        "💧 Start on Eb (black key) for \"Ma-ma\" — tender and emotional",
-        "🖤 ^F is F# leading into G: the famous weeping \"ooh\" phrase",
-        "🎤 \"Didn't mean to make you cry\": step down smoothly from G to F to Eb to D, landing on C"
+        "🕊️ \"Mama, life had just begun, but now I've gone and thrown it all away\"",
+        "👆 Right hand: F D F leaps up to high Bb, then four rapid repeated Bb notes into high C",
+        "🎹 Left hand: supportive bass walk Bb -> Gm -> Cm -> F"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Ooh...\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nE6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — Life Had Just Begun\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] F6 D F | B4- B2 z F | B B B B A2 B2 | c8 |]\n[V:LH] B,,8 | G,,8 | C,8 | F,,8 |]"
     },
     {
       "id": "s4",
-      "label": "\"Carry on\" & Outro",
-      "bars": "13–16",
+      "label": "\"Mama, ooh...\"",
+      "bars": "14–17",
       "tips": [
-        "🕊️ \"If I'm not back again this time tomorrow\": flowing eighth notes stepping down to Bb",
-        "💪 \"Carry on, carry on\": the uplifting D-Bb motif",
-        "🏁 \"As if nothing really matters\": gentle step down to low F"
+        "💧 \"Mama, ooh, didn't mean to make you cry\"",
+        "🖤 Right hand: Eb into F and F# (^F): the famous weeping motif resolving to G",
+        "🎹 Left hand: rich chord changes on Eb -> Bb -> Gm -> Cm"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Carry On & Outro\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nC D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Ooh...\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] E6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |]\n[V:LH] E,8 | B,,8 | G,,8 | C,8 |]"
     },
     {
       "id": "s5",
-      "label": "Full Song Run-Through",
-      "bars": "1–16",
+      "label": "\"Carry on\" & Outro",
+      "bars": "18–21",
       "tips": [
-        "👑 Put all 4 phrases together in the original key of Bb major!",
-        "🎵 Sing the lyrics as you play to keep Freddie's signature timing",
-        "🎉 You are playing Bohemian Rhapsody as Queen originally recorded it!"
+        "💪 \"If I'm not back again this time tomorrow, carry on, carry on\"",
+        "👆 Right hand: uplifting D-Bb motif into the quiet reflective outro",
+        "🏁 Resolves softly on the home key of Bb"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nF6 G2 | F2 E2 D4- | D2 z2 D2 E2 |\nG2 G G F2 E F | G2 F F F4 |\nF6 D F | B4- B2 z F | B B B B A2 B2 | c8 |\nE6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |\nC D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — Carry On & Outro\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] C D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]\n[V:LH] _A,,8 | E,8 | B,,8 | F,,8 |]"
     }
   ]
 }
