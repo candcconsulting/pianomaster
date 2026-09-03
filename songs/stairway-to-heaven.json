@@ -8,6 +8,7 @@
   "color": "#059669",
   "description": "The iconic opening arpeggio and haunting verse melody. Instantly recognisable and deeply satisfying on piano.",
   "generalTip": "Right hand melody and arpeggio. Key of A minor (no sharps/flats in signature, but watch for G# and F# black keys!).",
+  "fullAbc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nA c e a ^g e c ^g | =g e c e ^f d A2 |\n=f c A c e c A2 | B d G B A4 |\ne2 e2 e2 d2 | c2 B2 A4 | B2 c2 d2 c2 | B8 |\ne2 e2 e2 d2 | c2 B2 A4 | B2 c2 B4 | A8 |\nc2 d2 e4 | e2 d2 c4 | B2 c2 d2 c2 | B8 |\nc2 d2 e4 | e2 d2 c4 | B2 c2 B4 | A8 |]",
   "sections": [
     {
       "id": "s1",

@@ -8,6 +8,7 @@
   "color": "#0891b2",
   "description": "A simplified arrangement of Debussy's moonlight masterpiece. Dreamy, impressionistic, beautiful.",
   "generalTip": "⚠️ Simplified arrangement in C major. Original is in Db major with complex arpeggios. Right hand melody only.",
+  "fullAbc": "X:1\nT:Clair de Lune (Full Melody)\nC:Claude Debussy\nM:3/4\nL:1/4\nQ:1/4=48\nK:C\n%%MIDI program 0\nG2 E | G2 E | c2 A | c3 |\nG2 E | G2 C | E3 | C3 |\nF A c | d2 B | A F D | F3 |\nE G B | c2 A | G E C | E3 |\nC E G | c2 B | A c e | d3 |\nB d f | e2 c | A F D | C3 |\nG2 E | G2 E | F2 D | F3 |\nE2 C | E2 C | D3 | C3 |\nG2 E | F2 D | E2 C | C3 |\nz G2 | z E2 | z C2 | C6 |]",
   "sections": [
     {
       "id": "s1",

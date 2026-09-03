@@ -8,6 +8,7 @@
   "color": "#d97706",
   "description": "Official Easy Piano arrangement by Phillip Keveren (Hal Leonard / MuseScore). Transposed to C major so every note is approachable on the white keys.",
   "generalTip": "Key of C major (all natural white keys!). Follow the finger numbers in the tips. Keep the tempo steady and relaxed at 72 BPM.",
+  "fullAbc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nC E G c C E G c | C E G c C E G c |\nc6 d2 | c2 B2 A4 | e e e d c2 d2 | e2 d2 d4 |\nc6 e g | a6 g2 | a a a a g2 a2 | g8 |\nf6 g2 | a2 g2 f2 e2 | d8 |\nd2 e2 f f f f | e2 d2 c2 d2 | e8 |\ne4 c4 | e4 c4 | d2 c2 B2 A2 | G8 |\ne2 d2 c2 B2 | A2 G2 F2 E2 | A4 G4 | E8 |\nc2 c2 B2 A2 | G2 F2 E2 D2 | C4 z4 | C8 |]",
   "sections": [
     {
       "id": "s1",

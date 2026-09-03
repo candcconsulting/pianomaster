@@ -8,6 +8,7 @@
   "color": "#4f46e5",
   "description": "The perfect first song. Just 5 notes, instantly recognisable, endlessly satisfying to play.",
   "generalTip": "Right hand only. Keep your hand relaxed — like holding a small ball.",
+  "fullAbc": "X:1\nT:Ode to Joy (Full Song)\nC:Ludwig van Beethoven\nM:4/4\nL:1/4\nQ:1/4=70\nK:C\n%%MIDI program 0\nE E F G | G F E D | C C D E | E3/2 D/ D2 |\nE E F G | G F E D | C C D E | D3/2 C/ C2 |\nD D E C | D E/F/ E C | D E/F/ E D | C D G,2 |\nE E F G | G F E D | C C D E | D3/2 C/ C2 |]",
   "sections": [
     {
       "id": "s1",
@@ -33,23 +34,23 @@
     },
     {
       "id": "s3",
-      "label": "Middle Section — New Melody",
+      "label": "Phrase 3 — The Middle Climb",
       "bars": "9–12",
       "tips": [
-        "⚡ E/F/ means E and F share one beat — they're quicker (eighth notes)",
-        "👆 Finger guide: D(2) D(2) E(3) C(1) · D(2) E(3)/F(4) E(3) C(1)",
-        "🔄 The pattern repeats: once you have bars 9–10, bars 11–12 are very similar"
+        "🪜 The melody climbs up: D → E → F — feel the energy build",
+        "🎯 Finger 2 on D, finger 3 on E, finger 4 on F",
+        "💡 E/F/ means play both notes in one beat — smooth and flowing"
       ],
-      "abc": "X:1\nT:Ode to Joy — Middle Section\nC:Beethoven\nM:4/4\nL:1/4\nQ:1/4=70\nK:C\n%%MIDI program 0\nD D E C | D E/F/ E C | D E/F/ E D | C D G2 |]"
+      "abc": "X:1\nT:Ode to Joy — Phrase 3\nC:Beethoven\nM:4/4\nL:1/4\nQ:1/4=70\nK:C\n%%MIDI program 0\nD D E C | D E/F/ E C | D E/F/ E D | C D G,2 |]"
     },
     {
       "id": "s4",
-      "label": "Finale — Bring It Home!",
+      "label": "Phrase 4 — Grand Finale",
       "bars": "13–16",
       "tips": [
-        "🎉 Same as Phrase 2 — you already know this one!",
-        "💪 Play it with confidence now — you've earned it",
-        "🎹 Once you know all 4 phrases, play the whole song start to finish!"
+        "🎉 You know this already! It's Phrase 2 again to close the piece",
+        "🏆 Play the whole song from start to finish — you've got this!",
+        "🎹 You just played Beethoven. That's genuinely brilliant."
       ],
       "abc": "X:1\nT:Ode to Joy — Finale\nC:Beethoven\nM:4/4\nL:1/4\nQ:1/4=70\nK:C\n%%MIDI program 0\nE E F G | G F E D | C C D E | D3/2 C/ C2 |]"
     }
