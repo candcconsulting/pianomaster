@@ -6,31 +6,31 @@
   "difficulty": 2,
   "emoji": "🪜",
   "color": "#059669",
-  "description": "The unmistakable right-hand guitar arpeggio intro and the iconic vocal melody (\"There's a lady who's sure\").",
-  "generalTip": "Focus on the right hand. The intro climbs through chord arpeggios (a -> b -> c' -> d'), followed by Robert Plant's timeless verse melody.",
-  "fullAbc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nA c e a B e ^g b | c e =g c' d ^f a d' |\nc e a c' B d g b | A c e a A4 z4 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |\nz2 c d e4 | d2 c2 B2 A2 | A8 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]",
+  "description": "The unmistakable right-hand acoustic guitar arpeggios and Robert Plant's timeless verse melody (\"There's a lady who's sure\").",
+  "generalTip": "Key of A minor. In the intro, the right hand rolls through C-E harmony while the top voice climbs: A -> B -> C -> D.",
+  "fullAbc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nc e a2 c e b2 | c e c'2 d ^f d'2 |\nc e c'2 B d b2 | A c e a A4 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |\nz2 c d e4 | d2 c2 B2 A2 | A8 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]",
   "sections": [
     {
       "id": "s1",
       "label": "The Iconic Arpeggio",
       "bars": "1–2",
       "tips": [
-        "🪜 The legendary acoustic opening — listen for the top note climbing: A -> B -> C -> D!",
-        "🖤 ^g is G# (black key) and ^f is F# (black key) — these give the arpeggio its mysterious beauty",
-        "👆 Finger guide: start with Finger 1 on A, roll through c(2) e(3) to high a(5)"
+        "🪜 The legendary acoustic opening — C-E rolls under the climbing melody: A -> B -> C -> D!",
+        "👆 Beat 1: c-e-a (Finger 1, 2, 4). Beat 2: c-e-b (reach pinky to b)",
+        "🖤 ^f is F# (black key) rolling into high d': the signature Zeppelin mystery"
       ],
-      "abc": "X:1\nT:Stairway to Heaven — Intro Arpeggio\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nA c e a B e ^g b | c e =g c' d ^f a d' |]"
+      "abc": "X:1\nT:Stairway to Heaven — The Iconic Arpeggio\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nc e a2 c e b2 | c e c'2 d ^f d'2 |]"
     },
     {
       "id": "s2",
       "label": "The Resolution",
       "bars": "3–4",
       "tips": [
-        "🍃 The descending return: high c' -> b -> a settling softly on home note A",
+        "🍃 The gentle descending return: c' -> b -> a settling softly on home note A",
         "🎵 Feel the tension release as the phrase rolls down through F and G chords",
         "🔄 Put Sections 1 and 2 together to play the world's most famous rock intro!"
       ],
-      "abc": "X:1\nT:Stairway to Heaven — Resolution\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nc e a c' B d g b | A c e a A4 |]"
+      "abc": "X:1\nT:Stairway to Heaven — The Resolution\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nc e c'2 B d b2 | A c e a A4 |]"
     },
     {
       "id": "s3",
@@ -59,11 +59,11 @@
       "label": "Full Song Run-Through",
       "bars": "1–14",
       "tips": [
-        "🎸 Play the iconic intro arpeggio directly into the verse melody!",
+        "🎸 Play the iconic intro arpeggios directly into the verse melody!",
         "🎵 Keep a steady, soulful tempo at 72 BPM",
-        "🎉 The complete right-hand performance of rock history's greatest masterpiece."
+        "🎉 The complete performance of rock history's greatest masterpiece."
       ],
-      "abc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nA c e a B e ^g b | c e =g c' d ^f a d' |\nc e a c' B d g b | A c e a A4 z4 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |\nz2 c d e4 | d2 c2 B2 A2 | A8 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]"
+      "abc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nc e a2 c e b2 | c e c'2 d ^f d'2 |\nc e c'2 B d b2 | A c e a A4 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |\nz2 c d e4 | d2 c2 B2 A2 | A8 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]"
     }
   ]
 }

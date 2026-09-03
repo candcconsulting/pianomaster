@@ -1,69 +1,69 @@
 {
   "id": "bohemian-rhapsody",
   "title": "Bohemian Rhapsody",
-  "composer": "Freddie Mercury (arr. Phillip Keveren)",
+  "composer": "Freddie Mercury / Queen",
   "year": "1975",
   "difficulty": 2,
   "emoji": "👑",
   "color": "#d97706",
-  "description": "The unmistakable vocal melody of Queen's masterpiece, arranged in C major from the official Phillip Keveren easy piano score.",
-  "generalTip": "Play the right-hand vocal melody with expression. Start on Finger 3 on G for \"Mama\". Keep the tempo steady at 72 BPM.",
-  "fullAbc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nG6 A2 | G2 F2 E4- | E2 z2 E2 F2 |\nA2 A A G2 F G | A2 G G G4 |\nG6 E G | c4- c2 z G | c c c c B2 c2 | d8 |\nF6 G _A | A4- A2 z A | A2 G2 F2 E2 | D8 |\nD E F F F F E D | C2 D6 | E2 C2 E2 C2 | D C B, A, G,4 |]",
+  "description": "Queen's timeless masterpiece in its true, original key of Bb major. Features the unforgettable vocal ballad melody everyone loves.",
+  "generalTip": "Key of Bb major (Bb and Eb). Sing the words in your head as you play to capture Freddie Mercury's phrasing.",
+  "fullAbc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nF6 G2 | F2 E2 D4- | D2 z2 D2 E2 |\nG2 G G F2 E F | G2 F F F4 |\nF6 D F | B4- B2 z F | B B B B A2 B2 | c8 |\nE6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |\nC D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]",
   "sections": [
     {
       "id": "s1",
       "label": "\"Mama, just killed a man\"",
       "bars": "1–4",
       "tips": [
-        "👑 The iconic opening phrase: \"Mama, just killed a man\"",
-        "👆 Start on G with Finger 3 for \"Ma-ma\", step up to A (Finger 4) on \"just\"",
-        "🎵 \"Put a gun against his head\": quick repeated A notes then step down to G and F"
+        "👑 The world's most famous rock ballad opening: \"Mama, just killed a man\"",
+        "👆 Start on F with Finger 2, step up to G (Finger 3) on \"just\", then down to Eb and D",
+        "🎵 \"Put a gun against his head\": rapid repeated G notes stepping down through F and Eb"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Just Killed a Man\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nG6 A2 | G2 F2 E4- | E2 z2 E2 F2 |\nA2 A A G2 F G | A2 G G G4 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Just Killed a Man\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nF6 G2 | F2 E2 D4- | D2 z2 D2 E2 |\nG2 G G F2 E F | G2 F F F4 |]"
     },
     {
       "id": "s2",
       "label": "\"Life had just begun\"",
       "bars": "5–8",
       "tips": [
-        "👆 Finger 1 on E, Finger 2 on G for \"life had\" — then leap to C (Finger 5) on \"just begun\"",
-        "🎵 \"Now I've gone and thrown it all away\": four steady C notes stepping down to B then resolving to D",
-        "✨ Hold the long D note for the full 4 beats"
+        "👆 Finger 2 on F, Finger 1 on D for \"life had\" — then leap to Bb (Finger 4) on \"just begun\"",
+        "🎵 \"Now I've gone and thrown it all away\": four steady Bb notes stepping down to A then climbing to high C",
+        "✨ Hold the long high C note for the full 4 beats"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Life Had Just Begun\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nG6 E G | c4- c2 z G | c c c c B2 c2 | d8 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — Life Had Just Begun\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nF6 D F | B4- B2 z F | B B B B A2 B2 | c8 |]"
     },
     {
       "id": "s3",
       "label": "\"Mama, ooh...\"",
       "bars": "9–12",
       "tips": [
-        "💧 Finger 2 on F for \"Ma-ma\" — tender and weeping",
-        "🖤 _A is Ab (black key) for the weeping \"ooh\" expression",
-        "🎤 \"Didn't mean to make you cry\": step down smoothly from A to G to F to E, landing on D"
+        "💧 Start on Eb (black key) for \"Ma-ma\" — tender and emotional",
+        "🖤 ^F is F# leading into G: the famous weeping \"ooh\" phrase",
+        "🎤 \"Didn't mean to make you cry\": step down smoothly from G to F to Eb to D, landing on C"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Ooh...\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nF6 G _A | A4- A2 z A | A2 G2 F2 E2 | D8 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Ooh...\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nE6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |]"
     },
     {
       "id": "s4",
       "label": "\"Carry on\" & Outro",
       "bars": "13–16",
       "tips": [
-        "🕊️ \"If I'm not back again this time tomorrow\": gentle flowing eighth notes",
-        "💪 \"Carry on, carry on\": the uplifting repeated E-C motif",
-        "🏁 \"As if nothing really matters\": gentle step down to G below middle C"
+        "🕊️ \"If I'm not back again this time tomorrow\": flowing eighth notes stepping down to Bb",
+        "💪 \"Carry on, carry on\": the uplifting D-Bb motif",
+        "🏁 \"As if nothing really matters\": gentle step down to low F"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Carry On & Outro\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nD E F F F F E D | C2 D6 | E2 C2 E2 C2 | D C B, A, G,4 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody — Carry On & Outro\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nC D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]"
     },
     {
       "id": "s5",
       "label": "Full Song Run-Through",
       "bars": "1–16",
       "tips": [
-        "👑 Put all 4 sections together to play the complete ballad melody!",
-        "🎵 Sing the words in your head as you play to keep the vocal rhythm natural",
-        "🎉 You are playing Queen's timeless anthem!"
+        "👑 Put all 4 phrases together in the original key of Bb major!",
+        "🎵 Sing the lyrics as you play to keep Freddie's signature timing",
+        "🎉 You are playing Bohemian Rhapsody as Queen originally recorded it!"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nG6 A2 | G2 F2 E4- | E2 z2 E2 F2 |\nA2 A A G2 F G | A2 G G G4 |\nG6 E G | c4- c2 z G | c c c c B2 c2 | d8 |\nF6 G _A | A4- A2 z A | A2 G2 F2 E2 | D8 |\nD E F F F F E D | C2 D6 | E2 C2 E2 C2 | D C B, A, G,4 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%MIDI program 0\nF6 G2 | F2 E2 D4- | D2 z2 D2 E2 |\nG2 G G F2 E F | G2 F F F4 |\nF6 D F | B4- B2 z F | B B B B A2 B2 | c8 |\nE6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |\nC D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]"
     }
   ]
 }
