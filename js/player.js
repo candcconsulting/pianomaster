@@ -9,6 +9,7 @@ let currentSection  = 0;            // current section index
 let synthController = null;         // abcjs SynthController instance
 let pianoKeyboard   = null;         // CasiotoneKeyboard instance
 let playerMode      = 'practice';   // 'practice' | 'justplay'
+let showNoteLetters = localStorage.getItem('just-play-show-letters') !== 'false'; // default true: display musical letters under notes
 let isCountingIn    = false;        // true while 2-second lead-in is ticking
 let isPlaying       = false;        // true while audio is actively playing
 let metronomeCtx    = null;         // Web Audio Context for metronome clicks
@@ -159,6 +160,7 @@ async function init() {
   document.title = `🎹 ${song.title} — Just Play`;
 
   updateModeUI();
+  updateLettersButton();
 
   if (playerMode === 'justplay') {
     loadJustPlayMode();
@@ -303,6 +305,98 @@ function loadJustPlayMode() {
   renderScore(fullAbc, { abc: fullAbc }, true);
 }
 
+// ── Musical Note Letters on Notation ──────────────────────────────────────────
+
+function annotateAbcWithNoteLetters(abc) {
+  if (!abc) return '';
+
+  const keyMatch = abc.match(/K:\s*([A-Ga-g][#b]?m?)/);
+  const key = keyMatch ? keyMatch[1].trim() : 'C';
+
+  const keySharps = {
+    'G': ['F'], 'Em': ['F'],
+    'D': ['F', 'C'], 'Bm': ['F', 'C'],
+    'A': ['F', 'C', 'G'], 'F#m': ['F', 'C', 'G'],
+    'E': ['F', 'C', 'G', 'D'], 'C#m': ['F', 'C', 'G', 'D']
+  };
+  const keyFlats = {
+    'F': ['B'], 'Dm': ['B'],
+    'Bb': ['B', 'E'], 'Gm': ['B', 'E'],
+    'Eb': ['B', 'E', 'A'], 'Cm': ['B', 'E', 'A'],
+    'Ab': ['B', 'E', 'A', 'D'], 'Fm': ['B', 'E', 'A', 'D']
+  };
+
+  const getDefaultAccidental = (noteLetter) => {
+    if (keySharps[key] && keySharps[key].includes(noteLetter)) return '#';
+    if (keyFlats[key] && keyFlats[key].includes(noteLetter)) return 'b';
+    return '';
+  };
+
+  const lines = abc.split('\n');
+  const resultLines = lines.map(line => {
+    const trimmed = line.trim();
+    // Preserve header lines, directives, and lyrics lines as-is
+    if (/^[A-Za-z%]:/.test(trimmed) || trimmed.startsWith('w:') || trimmed.startsWith('%%')) return line;
+
+    let currentMeasureAccidentals = {};
+
+    return line.replace(/("[^"]*")|(\|\]|\|\||\|)|([_=\^]?)([A-Ga-g])([,']*)/g, (match, quote, bar, acc, letter, oct) => {
+      if (quote) return quote;
+      if (bar) {
+        currentMeasureAccidentals = {};
+        return bar;
+      }
+      if (!letter) return match;
+
+      const base = letter.toUpperCase();
+      let label = base;
+
+      if (acc === '^') {
+        currentMeasureAccidentals[base] = '#';
+        label += '#';
+      } else if (acc === '_') {
+        currentMeasureAccidentals[base] = 'b';
+        label += 'b';
+      } else if (acc === '=') {
+        currentMeasureAccidentals[base] = '';
+        label = base;
+      } else if (currentMeasureAccidentals[base] !== undefined) {
+        label += currentMeasureAccidentals[base];
+      } else {
+        label += getDefaultAccidental(base);
+      }
+
+      // ABC notation: "_TEXT" renders TEXT directly beneath the note
+      return `"${'_' + label}"` + match;
+    });
+  });
+
+  return resultLines.join('\n');
+}
+
+function toggleNoteLetters() {
+  showNoteLetters = !showNoteLetters;
+  localStorage.setItem('just-play-show-letters', showNoteLetters);
+  updateLettersButton();
+  if (playerMode === 'justplay') {
+    loadJustPlayMode();
+  } else {
+    loadSection(currentSection);
+  }
+}
+
+function updateLettersButton() {
+  const btn = document.getElementById('btn-toggle-letters');
+  const txt = document.getElementById('letters-btn-text');
+  if (btn) {
+    btn.className = showNoteLetters ? 'btn-letters active' : 'btn-letters';
+    btn.setAttribute('aria-pressed', showNoteLetters ? 'true' : 'false');
+  }
+  if (txt) {
+    txt.textContent = showNoteLetters ? 'Letters: ON' : 'Letters: OFF';
+  }
+}
+
 // ── Render Sheet Music & Setup Audio Cursor ───────────────────────────────────
 
 function renderScore(abcString, sectionData, isFullPlay) {
@@ -320,7 +414,8 @@ function renderScore(abcString, sectionData, isFullPlay) {
 
     if (typeof ABCJS !== 'undefined' && ABCJS.renderAbc) {
       try {
-        visualObj = ABCJS.renderAbc(notationEl, abcString, {
+        const finalAbc = showNoteLetters ? annotateAbcWithNoteLetters(abcString) : abcString;
+        visualObj = ABCJS.renderAbc(notationEl, finalAbc, {
           responsive:     'resize',
           add_classes:    true,
           scale:          isFullPlay ? 1.15 : 1.25,

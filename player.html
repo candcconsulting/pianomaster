@@ -23,14 +23,21 @@
       <p class="header-sub" id="song-sub"></p>
     </div>
 
-    <!-- Mode Selector: Section Practice vs Just Play Continuous -->
-    <div class="mode-toggle">
-      <button id="btn-mode-practice" class="btn-mode active" onclick="switchMode('practice')">
-        🎯 Practice
+    <div class="header-controls">
+      <!-- Note Letters Toggle -->
+      <button id="btn-toggle-letters" class="btn-letters active" onclick="toggleNoteLetters()" title="Toggle note letters under notes" aria-label="Toggle note letter names under sheet music">
+        <span class="letters-icon">🔤</span> <span id="letters-btn-text">Letters: ON</span>
       </button>
-      <button id="btn-mode-justplay" class="btn-mode" onclick="switchMode('justplay')">
-        🎹 Just Play
-      </button>
+
+      <!-- Mode Selector: Section Practice vs Just Play Continuous -->
+      <div class="mode-toggle">
+        <button id="btn-mode-practice" class="btn-mode active" onclick="switchMode('practice')">
+          🎯 Practice
+        </button>
+        <button id="btn-mode-justplay" class="btn-mode" onclick="switchMode('justplay')">
+          🎹 Just Play
+        </button>
+      </div>
     </div>
   </header>
 
