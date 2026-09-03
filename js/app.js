@@ -4,7 +4,7 @@
 // app.js — Home page logic: renders song library grid and resume banner
 // ──────────────────────────────────────────────────────────────────────────────
 
-(function () {
+(async function () {
 
   function getDifficultyBadge(level) {
     if (level === 1) return '<span class="diff-badge diff-1">Level 1 · Easy</span>';
@@ -88,6 +88,15 @@
           Resume Practice →
         </button>
       </div>`;
+  }
+
+  // Await song discovery and loading before rendering, if a loader exists.
+  try {
+    if (typeof loadSongs === 'function') {
+      await loadSongs();
+    }
+  } catch (err) {
+    console.error('Error awaiting loadSongs:', err);
   }
 
   function initHome() {

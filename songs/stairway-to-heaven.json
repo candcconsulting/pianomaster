@@ -1,0 +1,68 @@
+{
+  "id": "stairway-to-heaven",
+  "title": "Stairway to Heaven",
+  "composer": "Jimmy Page & Robert Plant / Led Zeppelin",
+  "year": "1971",
+  "difficulty": 2,
+  "emoji": "🪜",
+  "color": "#059669",
+  "description": "The iconic opening arpeggio and haunting verse melody. Instantly recognisable and deeply satisfying on piano.",
+  "generalTip": "Right hand melody and arpeggio. Key of A minor (no sharps/flats in signature, but watch for G# and F# black keys!).",
+  "sections": [
+    {
+      "id": "s1",
+      "label": "The Iconic Arpeggio",
+      "bars": "1–2",
+      "tips": [
+        "🪜 Start on low A below Middle C, then climb through C, E, and high A (octave leap!)",
+        "🖤 ^g means G# (black key just below A) — this descending bass note creates the iconic tension",
+        "👆 Finger guide: A(1) c(2) e(3) a(5) then ^g(4) e(3) c(2) ^g(4)"
+      ],
+      "abc": "X:1\nT:Stairway to Heaven — The Opening Arpeggio\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nA c e a ^g e c ^g | =g e c e ^f d A2 |]"
+    },
+    {
+      "id": "s2",
+      "label": "The Resolution",
+      "bars": "3–4",
+      "tips": [
+        "🍃 =f means natural F (white key). Feel the music soften as it lands on the F chord",
+        "🎵 Notice how bars 3–4 resolve back to the home note A — tension released",
+        "🔄 Combine Sections 1 and 2 and you can play the world's most famous rock intro!"
+      ],
+      "abc": "X:1\nT:Stairway to Heaven — Resolution\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\n=f c A c e c A2 | B d G B A4 |]"
+    },
+    {
+      "id": "s3",
+      "label": "\"All That Glitters\"",
+      "bars": "5–8",
+      "tips": [
+        "🎤 \"There's a lady who's sure all that glitters is gold / And she's buying a stairway to heaven\"",
+        "🎵 The melody moves by gentle steps: E E E D · C B A — sing the words as you play",
+        "✨ Let each phrase breathe before starting the next line"
+      ],
+      "abc": "X:1\nT:Stairway to Heaven — All That Glitters\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\ne2 e2 e2 d2 | c2 B2 A4 | B2 c2 d2 c2 | B8 |\ne2 e2 e2 d2 | c2 B2 A4 | B2 c2 B4 | A8 |]"
+    },
+    {
+      "id": "s4",
+      "label": "\"When She Gets There\"",
+      "bars": "9–12",
+      "tips": [
+        "🕊️ \"When she gets there she knows if the stores are all closed / With a word she can get what she came for\"",
+        "📈 The melody starts climbing up from C to high E: C D E",
+        "💫 Notice the bittersweet step from B down to A at the very end"
+      ],
+      "abc": "X:1\nT:Stairway to Heaven — When She Gets There\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nc2 d2 e4 | e2 d2 c4 | B2 c2 d2 c2 | B8 |\nc2 d2 e4 | e2 d2 c4 | B2 c2 B4 | A8 |]"
+    },
+    {
+      "id": "s5",
+      "label": "Full Song Run-Through",
+      "bars": "1–12",
+      "tips": [
+        "🎸 You know every piece now — play from the arpeggio right into the verse!",
+        "🎵 Keep a steady, gentle tempo — don't rush the transitions between intro and melody",
+        "🎉 You are playing Stairway to Heaven on the piano. Pure magic."
+      ],
+      "abc": "X:1\nT:Stairway to Heaven — Full Run\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%MIDI program 0\nA c e a ^g e c ^g | =g e c e ^f d A2 |\n=f c A c e c A2 | B d G B A4 |\ne2 e2 e2 d2 | c2 B2 A4 | B2 c2 d2 c2 | B8 |\ne2 e2 e2 d2 | c2 B2 A4 | B2 c2 B4 | A8 |\nc2 d2 e4 | e2 d2 c4 | B2 c2 d2 c2 | B8 |\nc2 d2 e4 | e2 d2 c4 | B2 c2 B4 | A8 |]"
+    }
+  ]
+}

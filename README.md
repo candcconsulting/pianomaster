@@ -10,12 +10,13 @@ A free, subscription-free piano learning web app. Breaks songs into sections, di
 
 | Song | Difficulty | Sections |
 |------|-----------|----------|
-| 🎶 Ode to Joy — Beethoven | ⚫⚫○○ Beginner | 4 |
-| 🌹 Für Elise — Beethoven | ⚫⚫⚫○ Easy | 4 |
-| 👑 Bohemian Rhapsody — Queen | ⚫⚫⚫○ Intermediate | 5 |
+| 🎶 Ode to Joy — Beethoven | ⚫○○○ Beginner | 4 |
+| 🌹 Für Elise — Beethoven | ⚫⚫○○ Easy | 4 |
+| 🪜 Stairway to Heaven — Led Zeppelin | ⚫⚫○○ Easy | 5 |
+| 👑 Bohemian Rhapsody — Queen (arr. Keveren) | ⚫⚫○○ Easy | 5 |
 | 🌙 Clair de Lune — Debussy | ⚫⚫⚫○ Intermediate | 5 |
 
-> **Note:** Bohemian Rhapsody and Clair de Lune are simplified arrangements designed for beginners to learn the melody. They are not full transcriptions.
+> **Note:** Bohemian Rhapsody, Clair de Lune, and Stairway to Heaven are simplified arrangements designed for beginners to learn the melody. They are not full transcriptions.
 
 ---
 
@@ -90,11 +91,35 @@ Then restart: `docker compose up -d --build`
 
 ## Adding More Songs
 
-Edit `js/songs.js` and add a new object to the `SONGS` array following the existing pattern. Each section needs:
-- `id` — unique string
-- `label` — shown in the section nav bar  
-- `tips` — array of 3 practice tips
-- `abc` — the ABC notation string for that section
+Create a new `<song-id>.json` file inside the `songs/` folder (and list it in `songs/index.json`). The app dynamically loads any JSON song in the `songs/` folder!
+
+Each song JSON file structure:
+```json
+{
+  "id": "song-id",
+  "title": "Song Title",
+  "composer": "Artist or Composer",
+  "year": "Year",
+  "difficulty": 1,
+  "emoji": "🎹",
+  "color": "#4f46e5",
+  "description": "Short description of the song.",
+  "generalTip": "Tip for the learner.",
+  "sections": [
+    {
+      "id": "s1",
+      "label": "Section 1 — Description",
+      "bars": "1–4",
+      "tips": [
+        "Tip 1",
+        "Tip 2",
+        "Tip 3"
+      ],
+      "abc": "X:1\nT:Title\nM:4/4\nL:1/4\nQ:1/4=70\nK:C\n%%MIDI program 0\nC D E C |]"
+    }
+  ]
+}
+```
 
 ABC notation resources:
 - [abcjs editor](https://www.abcjs.net/abcjs-editor.html) — live preview as you type

@@ -108,7 +108,14 @@ function runCountIn(callback) {
 
 // ── Initialise ────────────────────────────────────────────────────────────────
 
-function init() {
+async function init() {
+  // Ensure dynamic song loader runs if present, otherwise rely on inline SONGS
+  try {
+    if (typeof loadSongs === 'function') await loadSongs();
+  } catch (err) {
+    console.error('Error loading songs in player:', err);
+  }
+
   const songId = param('song') || 'ode-to-joy';
   song = (typeof getSongById === 'function') ? getSongById(songId) : null;
 
