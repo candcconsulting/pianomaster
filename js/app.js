@@ -1,49 +1,61 @@
 'use strict';
 
 // ──────────────────────────────────────────────────────────────────────────────
-// Home page logic — renders the song grid and resume banner
+// app.js — Home page logic: renders song library grid and resume banner
 // ──────────────────────────────────────────────────────────────────────────────
 
 (function () {
 
-  function difficultyPips(level) {
-    let html = '<div class="difficulty">';
-    for (let i = 1; i <= 4; i++) {
-      html += `<span class="pip ${i <= level ? 'on' : ''}"></span>`;
-    }
-    return html + '</div>';
+  function getDifficultyBadge(level) {
+    if (level === 1) return '<span class="diff-badge diff-1">Level 1 · Easy</span>';
+    if (level === 2) return '<span class="diff-badge diff-2">Level 2 · Medium</span>';
+    return '<span class="diff-badge diff-3">Level 3 · Hard</span>';
   }
 
   function renderSongCard(song) {
-    const prog   = getSongProgress(song.id);
-    const allProg = getProgress();
-    const pdata  = allProg[song.id];
-    const done   = prog.completedSections.length;
-    const total  = song.sections.length;
-    const href   = `player.html?song=${song.id}&section=${prog.currentSection}`;
-    const ago    = pdata?.lastPlayed ? timeAgo(pdata.lastPlayed) : null;
+    const prog      = typeof getSongProgress === 'function' ? getSongProgress(song.id) : { currentSection: 0, completedSections: [] };
+    const allProg   = typeof getProgress === 'function' ? getProgress() : {};
+    const pdata     = allProg[song.id];
+    const doneCount = prog.completedSections ? prog.completedSections.length : 0;
+    const total     = song.sections ? song.sections.length : 1;
+    const pct       = Math.round((doneCount / total) * 100);
+    const href      = `player.html?song=${song.id}&section=${prog.currentSection || 0}`;
+    const ago       = (pdata?.lastPlayed && typeof timeAgo === 'function') ? timeAgo(pdata.lastPlayed) : null;
 
     return `
       <div class="song-card"
-           style="--card-color:${song.color}"
+           style="--song-accent: ${song.color || '#6366f1'}"
            onclick="location.href='${href}'"
            role="button" tabindex="0"
            aria-label="Open ${song.title}">
-        <div class="card-emoji">${song.emoji}</div>
-        <div class="card-title">${song.title}</div>
-        <div class="card-composer">${song.composer} · ${song.year}</div>
-        <p class="card-desc">${song.description}</p>
-        <div class="card-footer">
-          ${difficultyPips(song.difficulty)}
-          <span class="progress-text">
-            ${done > 0 ? `<span class="done-count">${done}/${total}</span> sections done` : `${total} sections`}
-          </span>
+        
+        <div class="song-card-header">
+          <span class="song-emoji">${song.emoji || '🎵'}</span>
+          ${getDifficultyBadge(song.difficulty || 1)}
         </div>
-        ${ago ? `<div class="last-played-text">Last played: ${ago}</div>` : ''}
+
+        <div class="song-card-content">
+          <h2 class="song-title">${song.title}</h2>
+          <div class="song-composer">${song.composer} · ${song.year}</div>
+          <p class="song-desc">${song.description || ''}</p>
+        </div>
+
+        <div class="song-card-footer">
+          <div class="progress-info">
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: ${pct}%"></div>
+            </div>
+            <span class="progress-label">
+              ${doneCount > 0 ? `<strong>${doneCount}/${total}</strong> done (${pct}%)` : `${total} sections`}
+            </span>
+          </div>
+          ${ago ? `<div class="song-last-played">Last played ${ago}</div>` : ''}
+        </div>
       </div>`;
   }
 
   function renderResumeBanner() {
+    if (typeof getProgress !== 'function' || typeof getSongById !== 'function') return '';
     const allProg = getProgress();
     let latestId = null, latestTime = 0;
 
@@ -59,28 +71,52 @@
 
     const prog = getSongProgress(latestId);
     const ago  = timeAgo(allProg[latestId].lastPlayed);
-    const href = `player.html?song=${latestId}&section=${prog.currentSection}`;
-    const sectionLabel = song.sections[prog.currentSection]?.label || '';
+    const href = `player.html?song=${latestId}&section=${prog.currentSection || 0}`;
+    const sectionLabel = song.sections[prog.currentSection]?.label || `Section ${(prog.currentSection || 0) + 1}`;
 
     return `
-      <div class="resume-card">
-        <div class="resume-info">
-          <h3>${song.emoji} ${song.title}</h3>
-          <p>${sectionLabel} · ${ago}</p>
+      <div class="resume-banner" onclick="location.href='${href}'">
+        <div class="resume-left">
+          <span class="resume-emoji">${song.emoji || '🎹'}</span>
+          <div class="resume-details">
+            <div class="resume-tag">Jump back in · ${ago || 'recently'}</div>
+            <h3 class="resume-title">${song.title}</h3>
+            <div class="resume-sub">${sectionLabel}</div>
+          </div>
         </div>
-        <a href="${href}" class="btn-resume">Resume →</a>
+        <button class="resume-button" onclick="event.stopPropagation(); location.href='${href}'">
+          Resume Practice →
+        </button>
       </div>`;
   }
 
-  // Render everything
-  document.getElementById('resume-container').innerHTML = renderResumeBanner();
-  document.getElementById('songs-grid').innerHTML = SONGS.map(renderSongCard).join('');
+  function initHome() {
+    const resumeEl = document.getElementById('resume-container');
+    const gridEl   = document.getElementById('songs-grid');
 
-  // Keyboard navigation for cards
-  document.querySelectorAll('.song-card').forEach(card => {
-    card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') card.click();
+    if (resumeEl) {
+      resumeEl.innerHTML = renderResumeBanner();
+    }
+
+    if (gridEl && typeof SONGS !== 'undefined' && Array.isArray(SONGS)) {
+      gridEl.innerHTML = SONGS.map(renderSongCard).join('');
+    }
+
+    // Keyboard support for cards
+    document.querySelectorAll('.song-card').forEach(card => {
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.click();
+        }
+      });
     });
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHome);
+  } else {
+    initHome();
+  }
 
 })();

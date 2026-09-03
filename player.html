@@ -2,35 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Just Play 🎹</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎹</text></svg>">
+  <link rel="stylesheet" href="abcjs-audio.css">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-min.js"></script>
+  <script src="js/abcjs-basic-min.js"></script>
 </head>
 <body>
 
 <div class="player-wrap" id="player-wrap">
 
+  <!-- Header -->
   <header class="player-header">
     <a href="index.html" class="btn-back">← Songs</a>
     <div class="header-info">
       <h1 id="song-title">Loading…</h1>
       <p class="header-sub" id="song-sub"></p>
     </div>
+
+    <!-- Mode Selector: Section Practice vs Just Play Continuous -->
+    <div class="mode-toggle">
+      <button id="btn-mode-practice" class="btn-mode active" onclick="switchMode('practice')">
+        🎯 Practice
+      </button>
+      <button id="btn-mode-justplay" class="btn-mode" onclick="switchMode('justplay')">
+        🎹 Just Play
+      </button>
+    </div>
   </header>
 
+  <!-- Section Dots (Visible in Practice Mode) -->
   <div class="dots-bar" id="dots-bar"></div>
 
+  <!-- Main Body -->
   <div class="player-body">
+    <!-- Left Column: Sheet Music & Casiotone Keyboard -->
     <div class="notation-col">
-      <div id="notation">
-        <div class="loading-box"><div class="spinner"></div><p>Loading score…</p></div>
+      <div class="notation-scroll-container" id="notation-scroll-container">
+        <div id="notation">
+          <div class="loading-box"><div class="spinner"></div><p>Loading score…</p></div>
+        </div>
       </div>
+      <!-- Casiotone CT-400 Piano Keyboard -->
+      <div id="piano-keyboard-container" class="piano-keyboard-container"></div>
     </div>
-    <div class="side-col">
-      <div class="tips-card">
+
+    <!-- Right Column: Tips & Audio Controls -->
+    <div class="side-col" id="side-col">
+      <div class="tips-card" id="tips-card">
         <div class="tips-title">💡 Practice Tips</div>
         <ul class="tips-list" id="tips-list"><li>Loading…</li></ul>
       </div>
@@ -40,17 +62,33 @@
     </div>
   </div>
 
+  <!-- Pinned Bottom Action Footer -->
   <footer class="player-footer">
-    <button class="btn btn-nav" id="btn-prev" onclick="prevSection()" disabled>← Prev</button>
-    <button class="btn btn-got-it" id="btn-got-it" onclick="markDone()">✓ Got it!</button>
-    <button class="btn btn-nav" id="btn-next" onclick="nextSection()">Next →</button>
+    <div id="footer-practice-controls" class="footer-controls-row">
+      <button class="btn btn-nav" id="btn-prev" onclick="prevSection()" disabled>← Prev</button>
+      <button class="btn btn-got-it" id="btn-got-it" onclick="markDone()">✓ Got it!</button>
+      <button class="btn btn-nav" id="btn-next" onclick="nextSection()">Next →</button>
+    </div>
+    <div id="footer-justplay-controls" class="footer-controls-row" style="display: none;">
+      <button class="btn btn-nav" id="btn-jp-restart" onclick="restartJustPlay()">↺ Restart</button>
+      <button class="btn btn-got-it" id="btn-jp-complete" onclick="markDone()">✓ Mastered Song!</button>
+      <button class="btn btn-nav" id="btn-jp-backtopractice" onclick="switchMode('practice')">🎯 Practice Phrases</button>
+    </div>
   </footer>
 
+</div>
+
+<!-- 2-Second Count-In Metronome Overlay -->
+<div id="count-in-overlay" class="count-in-overlay">
+  <div class="count-in-title">Get Ready</div>
+  <div id="count-in-number" class="count-in-number">2</div>
+  <div id="count-in-sub" class="count-in-sub">Place fingers on Note 1…</div>
 </div>
 
 <div id="toast"></div>
 
 <script src="js/songs.js"></script>
+<script src="js/keyboard.js"></script>
 <script src="js/player.js"></script>
 </body>
 </html>

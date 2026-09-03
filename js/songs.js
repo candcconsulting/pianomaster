@@ -2,8 +2,7 @@
 
 // ──────────────────────────────────────────────────────────────────────────────
 // JUST PLAY — Song Library
-// Each song has sections, each section has its own ABC notation string so it
-// can be rendered and played independently.
+// Each song has sections for focused practice, and full-song ABC for Just Play mode.
 // ──────────────────────────────────────────────────────────────────────────────
 
 const SONGS = [
@@ -22,6 +21,18 @@ const SONGS = [
     color: '#4f46e5',
     description: 'The perfect first song. Just 5 notes, instantly recognisable, endlessly satisfying to play.',
     generalTip: 'Right hand only. Keep your hand relaxed — like holding a small ball.',
+    fullAbc: `X:1
+T:Ode to Joy (Full Song)
+C:Ludwig van Beethoven
+M:4/4
+L:1/4
+Q:1/4=70
+K:C
+%%MIDI program 0
+E E F G | G F E D | C C D E | E3/2 D/ D2 |
+E E F G | G F E D | C C D E | D3/2 C/ C2 |
+D D E C | D E/F/ E C | D E/F/ E D | C D G,2 |
+E E F G | G F E D | C C D E | D3/2 C/ C2 |]`,
     sections: [
       {
         id: 's1',
@@ -63,31 +74,31 @@ E E F G | G F E D | C C D E | D3/2 C/ C2 |]`
       },
       {
         id: 's3',
-        label: 'Middle Section — New Melody',
+        label: 'Phrase 3 — The Middle Climb',
         bars: '9–12',
         tips: [
-          '⚡ E/F/ means E and F share one beat — they\'re quicker (eighth notes)',
-          '👆 Finger guide: D(2) D(2) E(3) C(1) · D(2) E(3)/F(4) E(3) C(1)',
-          '🔄 The pattern repeats: once you have bars 9–10, bars 11–12 are very similar'
+          '🪜 The melody climbs up: D → E → F — feel the energy build',
+          '🎯 Finger 2 on D, finger 3 on E, finger 4 on F',
+          '💡 E/F/ means play both notes in one beat — smooth and flowing'
         ],
         abc: `X:1
-T:Ode to Joy — Middle Section
+T:Ode to Joy — Phrase 3
 C:Beethoven
 M:4/4
 L:1/4
 Q:1/4=70
 K:C
 %%MIDI program 0
-D D E C | D E/F/ E C | D E/F/ E D | C D G2 |]`
+D D E C | D E/F/ E C | D E/F/ E D | C D G,2 |]`
       },
       {
         id: 's4',
-        label: 'Finale — Bring It Home!',
+        label: 'Phrase 4 — Grand Finale',
         bars: '13–16',
         tips: [
-          '🎉 Same as Phrase 2 — you already know this one!',
-          '💪 Play it with confidence now — you\'ve earned it',
-          '🎹 Once you know all 4 phrases, play the whole song start to finish!'
+          '🎉 You know this already! It\'s Phrase 2 again to close the piece',
+          '🏆 Play the whole song from start to finish — you\'ve got this!',
+          '🎹 You just played Beethoven. That\'s genuinely brilliant.'
         ],
         abc: `X:1
 T:Ode to Joy — Finale
@@ -104,7 +115,7 @@ E E F G | G F E D | C C D E | D3/2 C/ C2 |]`
 
   // ╔══════════════════════════════════════════════════════════════════╗
   // ║  FÜR ELISE — Beethoven 1810                                     ║
-  // ║  The classic first milestone. Right hand, A minor.             ║
+  // ║  The most recognisable piano motif in history.                 ║
   // ╚══════════════════════════════════════════════════════════════════╝
   {
     id: 'fur-elise',
@@ -112,93 +123,104 @@ E E F G | G F E D | C C D E | D3/2 C/ C2 |]`
     composer: 'Ludwig van Beethoven',
     year: '1810',
     difficulty: 2,
-    emoji: '🌹',
-    color: '#dc2626',
-    description: 'Every piano player\'s first milestone. The famous motif is surprisingly achievable as a beginner.',
-    generalTip: 'Right hand only. The D# (black key, written ^D) is the magic ingredient — don\'t be scared of it!',
+    emoji: '🎹',
+    color: '#059669',
+    description: 'The iconic E–D#–E–D#–E motif. Sounds sophisticated, surprisingly accessible to learn.',
+    generalTip: 'The key is the semitone step between E and D#. Keep fingers 5 and 4 light and nimble.',
+    fullAbc: `X:1
+T:Für Elise (Full Theme)
+C:Ludwig van Beethoven
+M:3/8
+L:1/16
+Q:3/8=50
+K:Am
+%%MIDI program 0
+e ^d e ^d e | B d c A2 | C E A B2 | E ^G B c2 |
+e ^d e ^d e | B d c A2 | C E A B2 | E c B A2 |]`,
     sections: [
       {
         id: 's1',
-        label: 'The Famous Motif',
+        label: 'Motif — The Iconic Opening',
         bars: '1–2',
         tips: [
-          '🖤 ^D means D# — the black key between D and E. It\'s what gives it that haunting quality',
-          '👆 Finger guide: E(3) D#(2) E(3) D#(2) E(3) B(1) — let finger 3 pivot between E and D#',
-          '🎵 The B at the end (B below Middle C) drops down — feel the tension release'
+          '✨ E – D# – E – D# – E — the famous two-note alternation',
+          '🖐 Finger 5 on High E, finger 4 on D# (the black key just below E)',
+          '🕊️ Feather-light touch — like raindrops on a window pane'
         ],
         abc: `X:1
-T:Für Elise — The Motif
+T:Für Elise — Motif
 C:Beethoven
-M:3/4
-L:1/8
-Q:3/4=58
+M:3/8
+L:1/16
+Q:3/8=50
 K:Am
 %%MIDI program 0
-E^D E^D EB, | DC A,3 z |]`
+e ^d e ^d e | B d c A2 |]`
       },
       {
         id: 's2',
-        label: 'The Answering Phrase',
-        bars: '3–4',
+        label: 'Theme Part A — The Arpeggio Rise',
+        bars: '3–5',
         tips: [
-          '⬆️ This section rises: C E A c (an octave climb up through a C major chord)',
-          '👆 Finger guide: C(1) E(2) A(3) c(5) — spread your hand wide for the reach',
-          '🎵 The ^c (C#) at the end adds colour — let it ring and decay naturally'
+          '🪜 The left-to-right climb: C → E → A → B',
+          '🎵 Finger 1 on C, finger 2 on E, finger 4 on A, finger 5 on B',
+          '🧘 Let each note connect smoothly to the next (legato)'
         ],
         abc: `X:1
-T:Für Elise — Answer
+T:Für Elise — Arpeggio Rise
 C:Beethoven
-M:3/4
-L:1/8
-Q:3/4=58
+M:3/8
+L:1/16
+Q:3/8=50
 K:Am
 %%MIDI program 0
-CE Ace d | ^cd e3 z |]`
+C E A B2 | E ^G B c2 |]`
       },
       {
         id: 's3',
-        label: 'Motif Returns',
-        bars: '5–6',
+        label: 'Theme Part B — Resolution',
+        bars: '6–8',
         tips: [
-          '🔄 Identical to the opening motif — this is the "A" section returning',
-          '✅ If you learned Section 1, this one is free!',
-          '🎵 Notice how the familiar theme feels like coming home each time it returns'
-        ],
-        abc: `X:1
-T:Für Elise — Motif Returns
-C:Beethoven
-M:3/4
-L:1/8
-Q:3/4=58
-K:Am
-%%MIDI program 0
-E^D E^D EB, | DC A,3 z |]`
-      },
-      {
-        id: 's4',
-        label: 'Resolution — The Ending',
-        bars: '7–8',
-        tips: [
-          '🏁 Rises through C E A B c d before landing on A — the "home" note of A minor',
-          '👆 Finger guide: C(1) E(2) A(3) B(4) c(5) d(4) e(5)',
-          '🎉 Master all 4 sections and you\'ve conquered the complete famous opening!'
+          '🔁 The motif returns! E – D# – E – D# – E again',
+          '🎯 Ends with the quiet descent: E → c → B → A',
+          '🏠 A is the home note (A minor) — feel it come to rest'
         ],
         abc: `X:1
 T:Für Elise — Resolution
 C:Beethoven
-M:3/4
-L:1/8
-Q:3/4=58
+M:3/8
+L:1/16
+Q:3/8=50
 K:Am
 %%MIDI program 0
-CE AB cd | e A3 z2 |]`
+e ^d e ^d e | B d c A2 | C E A B2 | E c B A2 |]`
+      },
+      {
+        id: 's4',
+        label: 'Full Main Theme',
+        bars: '1–8',
+        tips: [
+          '🔗 Put all three parts together into one flowing phrase',
+          '🎵 Keep the tempo steady — don\'t speed up on the motif',
+          '⭐ You are playing the most famous piano piece in the world!'
+        ],
+        abc: `X:1
+T:Für Elise — Main Theme
+C:Beethoven
+M:3/8
+L:1/16
+Q:3/8=50
+K:Am
+%%MIDI program 0
+e ^d e ^d e | B d c A2 | C E A B2 | E ^G B c2 |
+e ^d e ^d e | B d c A2 | C E A B2 | E c B A2 |]`
       }
     ]
   },
 
   // ╔══════════════════════════════════════════════════════════════════╗
-  // ║  BOHEMIAN RHAPSODY — Queen / Freddie Mercury 1975              ║
-  // ║  Simplified melody arrangement. Key of Bb major.               ║
+  // ║  BOHEMIAN RHAPSODY — Queen 1975                                 ║
+  // ║  The iconic piano intro, phrase by phrase.                     ║
   // ╚══════════════════════════════════════════════════════════════════╝
   {
     id: 'bohemian-rhapsody',
@@ -208,20 +230,34 @@ CE AB cd | e A3 z2 |]`
     difficulty: 3,
     emoji: '👑',
     color: '#d97706',
-    description: 'A simplified arrangement of the iconic piano melody. Start with the sections, then build to the full song.',
-    generalTip: '⚠️ Simplified arrangement. Key of Bb: all B and E notes are automatically flat. Right hand melody only.',
+    description: 'Freddie Mercury\'s legendary piano intro. Dramatic, emotional, unforgettable to play.',
+    generalTip: 'In Bb major — watch for Bb (black key) and Eb (black key). Play with feeling and drama.',
+    fullAbc: `X:1
+T:Bohemian Rhapsody (Full Piano Intro)
+C:Freddie Mercury / Queen
+M:4/4
+L:1/4
+Q:1/4=70
+K:Bb
+%%MIDI program 0
+F F F G | A B3 | F F E E | _D C2 z |
+G G _A G | F E D B, | E2 D2 | B,4 |
+B B _A G | F2 E2 | _D2 C2 | B,4 |
+F F F F | E _D C B, | B,4 | B,4 |
+c B A G | F E D B, | E2 D2 | B,4 |
+F F E D | C B, z2 | B,4 | B,4 |]`,
     sections: [
       {
         id: 's1',
         label: '"Is this the real life?"',
         bars: '1–4',
         tips: [
-          '🎼 Key of Bb: whenever you see B or E in the music, play the flat (black) version',
-          '📈 The melody rises: F F F G A then Bb — bright and questioning, like the lyric',
-          '👆 Start with finger 1 or 2 on F, then walk up naturally through the scale'
+          '👑 The opening statement — 3 steady Fs, then climb to G, A, Bb',
+          '🖐 Finger 1 on F, finger 2 on G, finger 3 on A, finger 4 on Bb',
+          '✨ Bar 4 descends through Eb and Db to C — dramatic and mournful'
         ],
         abc: `X:1
-T:Bohemian Rhapsody — Is this the real life?
+T:Bohemian Rhapsody — Real Life
 C:Queen (simplified arrangement)
 M:4/4
 L:1/4
@@ -235,7 +271,7 @@ F F F G | A B3 | F F E E | _D C2 z |]`
         label: '"Caught in a landslide"',
         bars: '5–8',
         tips: [
-          '📉 This section descends — the melody slides down, matching "caught in a landslide"',
+          '🌊 The music cascades downward like the lyrics describe',
           '🎹 _A means Ab — the black key between G and A. Play it with finger 4',
           '🎵 The phrase ends on Bb — the home note. Feel it resolve and settle'
         ],
@@ -330,6 +366,24 @@ F F E D | C B, z2 | B,4 | B,4 |]`
     color: '#0891b2',
     description: 'A simplified arrangement of Debussy\'s moonlight masterpiece. Dreamy, impressionistic, beautiful.',
     generalTip: '⚠️ Simplified arrangement in C major. Original is in Db major with complex arpeggios. Right hand melody only.',
+    fullAbc: `X:1
+T:Clair de Lune (Full Melody)
+C:Claude Debussy
+M:3/4
+L:1/4
+Q:1/4=48
+K:C
+%%MIDI program 0
+G2 E | G2 E | c2 A | c3 |
+G2 E | G2 C | E3 | C3 |
+F A c | d2 B | A F D | F3 |
+E G B | c2 A | G E C | E3 |
+C E G | c2 B | A c e | d3 |
+B d f | e2 c | A F D | C3 |
+G2 E | G2 E | F2 D | F3 |
+E2 C | E2 C | D3 | C3 |
+G2 E | F2 D | E2 C | C3 |
+z G2 | z E2 | z C2 | C6 |]`,
     sections: [
       {
         id: 's1',
@@ -437,7 +491,7 @@ z G2 | z E2 | z C2 | C6 |]`
 ];
 
 // ──────────────────────────────────────────────────────────────────────────────
-// Progress Helpers — saved to localStorage so progress survives weeks away
+// Helpers
 // ──────────────────────────────────────────────────────────────────────────────
 
 const PROGRESS_KEY = 'just-play-progress-v1';
@@ -470,6 +524,14 @@ function markSectionComplete(songId, sectionIndex) {
 
 function getSongById(id) {
   return SONGS.find(s => s.id === id) || null;
+}
+
+function getFullSongAbc(song) {
+  if (!song) return '';
+  if (song.fullAbc) return song.fullAbc;
+  // Fallback to last section or combine
+  const lastSec = song.sections[song.sections.length - 1];
+  return lastSec ? lastSec.abc : '';
 }
 
 function timeAgo(isoString) {
