@@ -1,0 +1,57 @@
+{
+  "id": "fur-elise",
+  "title": "Für Elise",
+  "composer": "Ludwig van Beethoven",
+  "year": "1810",
+  "difficulty": 2,
+  "emoji": "🌹",
+  "color": "#dc2626",
+  "description": "Every piano player's first milestone. The famous motif is surprisingly achievable as a beginner.",
+  "generalTip": "Right hand only. The D# (black key, written ^D) is the magic ingredient — don't be scared of it!",
+  "sections": [
+    {
+      "id": "s1",
+      "label": "The Famous Motif",
+      "bars": "1–2",
+      "tips": [
+        "🖤 ^D means D# — the black key between D and E. It's what gives it that haunting quality",
+        "👆 Finger guide: E(3) D#(2) E(3) D#(2) E(3) B(1) — let finger 3 pivot between E and D#",
+        "🎵 The B at the end (B below Middle C) drops down — feel the tension release"
+      ],
+      "abc": "X:1\nT:Für Elise — The Motif\nC:Beethoven\nM:3/4\nL:1/8\nQ:3/4=58\nK:Am\n%%MIDI program 0\nE^D E^D EB, | DC A,3 z |]"
+    },
+    {
+      "id": "s2",
+      "label": "The Answering Phrase",
+      "bars": "3–4",
+      "tips": [
+        "⬆️ This section rises: C E A c (an octave climb up through a C major chord)",
+        "👆 Finger guide: C(1) E(2) A(3) c(5) — spread your hand wide for the reach",
+        "🎵 The ^c (C#) at the end adds colour — let it ring and decay naturally"
+      ],
+      "abc": "X:1\nT:Für Elise — Answer\nC:Beethoven\nM:3/4\nL:1/8\nQ:3/4=58\nK:Am\n%%MIDI program 0\nCE Ace d | ^cd e3 z |]"
+    },
+    {
+      "id": "s3",
+      "label": "Motif Returns",
+      "bars": "5–6",
+      "tips": [
+        "🔄 Identical to the opening motif — this is the \"A\" section returning",
+        "✅ If you learned Section 1, this one is free!",
+        "🎵 Notice how the familiar theme feels like coming home each time it returns"
+      ],
+      "abc": "X:1\nT:Für Elise — Motif Returns\nC:Beethoven\nM:3/4\nL:1/8\nQ:3/4=58\nK:Am\n%%MIDI program 0\nE^D E^D EB, | DC A,3 z |]"
+    },
+    {
+      "id": "s4",
+      "label": "Resolution — The Ending",
+      "bars": "7–8",
+      "tips": [
+        "🏁 Rises through C E A B c d before landing on A — the \"home\" note of A minor",
+        "👆 Finger guide: C(1) E(2) A(3) B(4) c(5) d(4) e(5)",
+        "🎉 Master all 4 sections and you've conquered the complete famous opening!"
+      ],
+      "abc": "X:1\nT:Für Elise — Resolution\nC:Beethoven\nM:3/4\nL:1/8\nQ:3/4=58\nK:Am\n%%MIDI program 0\nCE AB cd | e A3 z2 |]"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 // Home page logic — renders the song grid and resume banner
 // ──────────────────────────────────────────────────────────────────────────────
 
-(function () {
+(async function () {
 
   function difficultyPips(level) {
     let html = '<div class="difficulty">';
@@ -72,9 +72,27 @@
       </div>`;
   }
 
+  // Await song discovery and loading before rendering
+  try {
+    await loadSongs();
+  } catch (err) {
+    console.error('Error awaiting loadSongs:', err);
+  }
+
   // Render everything
-  document.getElementById('resume-container').innerHTML = renderResumeBanner();
-  document.getElementById('songs-grid').innerHTML = SONGS.map(renderSongCard).join('');
+  const resumeContainer = document.getElementById('resume-container');
+  if (resumeContainer) {
+    resumeContainer.innerHTML = renderResumeBanner();
+  }
+
+  const songsGrid = document.getElementById('songs-grid');
+  if (songsGrid) {
+    if (SONGS.length === 0) {
+      songsGrid.innerHTML = '<p style="color:var(--text3);text-align:center;grid-column:1/-1;">No songs found.</p>';
+    } else {
+      songsGrid.innerHTML = SONGS.map(renderSongCard).join('');
+    }
+  }
 
   // Keyboard navigation for cards
   document.querySelectorAll('.song-card').forEach(card => {

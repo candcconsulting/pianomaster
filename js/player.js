@@ -23,7 +23,12 @@ function setUrlSection(index) {
 
 // ── Initialise ────────────────────────────────────────────────────────────────
 
-function init() {
+async function init() {
+  try {
+    await loadSongs();
+  } catch (err) {
+    console.error('Error loading songs in player:', err);
+  }
   const songId = param('song');
   song = getSongById(songId);
 

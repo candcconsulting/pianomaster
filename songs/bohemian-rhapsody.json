@@ -1,0 +1,68 @@
+{
+  "id": "bohemian-rhapsody",
+  "title": "Bohemian Rhapsody",
+  "composer": "Freddie Mercury (arr. Phillip Keveren)",
+  "year": "1975",
+  "difficulty": 2,
+  "emoji": "👑",
+  "color": "#d97706",
+  "description": "Official Easy Piano arrangement by Phillip Keveren (Hal Leonard / MuseScore). Transposed to C major so every note is approachable on the white keys.",
+  "generalTip": "Key of C major (all natural white keys!). Follow the finger numbers in the tips. Keep the tempo steady and relaxed at 72 BPM.",
+  "sections": [
+    {
+      "id": "s1",
+      "label": "Intro & \"Mama, just killed a man\"",
+      "bars": "1–6",
+      "tips": [
+        "🎹 Start with the flowing C major intro: C E G c — feel the gentle rocking pulse",
+        "👆 Finger 3 on C for \"Ma-ma\" (bars 3–4): c6 d2 | c2 B2 A4",
+        "🎵 \"Put a gun against his head\": e e e d c d | e d d4"
+      ],
+      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Just Killed a Man\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nC E G c C E G c | C E G c C E G c |\nc6 d2 | c2 B2 A4 | e e e d c2 d2 | e2 d2 d4 |]"
+    },
+    {
+      "id": "s2",
+      "label": "\"Life had just begun\"",
+      "bars": "7–10",
+      "tips": [
+        "👆 Finger 1 on E, Finger 2 on G for \"life had\" — then reach up to high A with Finger 3 or 5",
+        "🎵 \"Now I've gone and thrown it all away\": rapid repeated A notes before settling on low G",
+        "✨ Let the final G ring for the full 4 beats — feel the regret in the harmony"
+      ],
+      "abc": "X:1\nT:Bohemian Rhapsody — Life Had Just Begun\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nc6 e g | a6 g2 | a a a a g2 a2 | g8 |]"
+    },
+    {
+      "id": "s3",
+      "label": "\"Mama, ooh...\"",
+      "bars": "11–16",
+      "tips": [
+        "💧 Finger 3 on F for \"Ma-ma\" — notice how shifting to F gives this phrase its tender, weeping quality",
+        "🎤 \"Didn't mean to make you cry\": step down smoothly from A to G to F to E",
+        "🕊️ \"If I'm not back again this time tomorrow\": gentle eighth-note pulse moving forward"
+      ],
+      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Ooh\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nf6 g2 | a2 g2 f2 e2 | d8 |\nd2 e2 f f f f | e2 d2 c2 d2 | e8 |]"
+    },
+    {
+      "id": "s4",
+      "label": "\"Carry on\" & Outro",
+      "bars": "17–24",
+      "tips": [
+        "💪 \"Carry on, carry on\": uplifting repeated motif E-C | E-C",
+        "🕊️ The gentle, reflective outro — slower and quieter (piano / pp)",
+        "🏁 Ends softly on C — \"Any way the wind blows...\""
+      ],
+      "abc": "X:1\nT:Bohemian Rhapsody — Carry On & Outro\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=64\nK:C\n%%MIDI program 0\ne4 c4 | e4 c4 | d2 c2 B2 A2 | G8 |\ne2 d2 c2 B2 | A2 G2 F2 E2 | A4 G4 | E8 |\nc2 c2 B2 A2 | G2 F2 E2 D2 | C4 z4 | C8 |]"
+    },
+    {
+      "id": "s5",
+      "label": "Full Song Run-Through",
+      "bars": "1–24",
+      "tips": [
+        "👑 Play all the sections in sequence — from the intro arpeggio to the quiet outro!",
+        "🎵 Keep a steady beat of 72 BPM, slowing slightly for the final outro",
+        "🎉 You are playing Phillip Keveren's official arrangement of Bohemian Rhapsody!"
+      ],
+      "abc": "X:1\nT:Bohemian Rhapsody — Full Run\nC:Freddie Mercury (arr. Phillip Keveren)\nM:4/4\nL:1/8\nQ:1/4=72\nK:C\n%%MIDI program 0\nC E G c C E G c | C E G c C E G c |\nc6 d2 | c2 B2 A4 | e e e d c2 d2 | e2 d2 d4 |\nc6 e g | a6 g2 | a a a a g2 a2 | g8 |\nf6 g2 | a2 g2 f2 e2 | d8 |\nd2 e2 f f f f | e2 d2 c2 d2 | e8 |\ne4 c4 | e4 c4 | d2 c2 B2 A2 | G8 |\ne2 d2 c2 B2 | A2 G2 F2 E2 | A4 G4 | E8 |\nc2 c2 B2 A2 | G2 F2 E2 D2 | C4 z4 | C8 |]"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "claire-de-lune",
+  "title": "Clair de Lune",
+  "composer": "Claude Debussy",
+  "year": "1905",
+  "difficulty": 3,
+  "emoji": "🌙",
+  "color": "#0891b2",
+  "description": "A simplified arrangement of Debussy's moonlight masterpiece. Dreamy, impressionistic, beautiful.",
+  "generalTip": "⚠️ Simplified arrangement in C major. Original is in Db major with complex arpeggios. Right hand melody only.",
+  "sections": [
+    {
+      "id": "s1",
+      "label": "Opening Theme — Moonrise",
+      "bars": "1–8",
+      "tips": [
+        "🌙 Play gently and very slowly — \"Clair de Lune\" means moonlight",
+        "🎵 Let each note breathe and linger — don't rush a single one",
+        "👆 G(5) E(3) C(1) — the G-E-C shape outlines a C major chord"
+      ],
+      "abc": "X:1\nT:Clair de Lune — Opening Theme\nC:Debussy (simplified arrangement)\nM:3/4\nL:1/4\nQ:1/4=50\nK:C\n%%MIDI program 0\nG2 E | G2 E | c2 A | c3 |\nG2 E | G2 C | E3 | C3 |]"
+    },
+    {
+      "id": "s2",
+      "label": "Second Theme — Flowing",
+      "bars": "9–16",
+      "tips": [
+        "🌊 This theme flows downward, like moonlight reflected on water",
+        "🎵 Connect the notes smoothly — no gaps between them (legato)",
+        "💡 Imagine the sound gently rising and falling like a calm tide"
+      ],
+      "abc": "X:1\nT:Clair de Lune — Second Theme\nC:Debussy (simplified arrangement)\nM:3/4\nL:1/4\nQ:1/4=50\nK:C\n%%MIDI program 0\nF A c | d2 B | A F D | F3 |\nE G B | c2 A | G E C | E3 |]"
+    },
+    {
+      "id": "s3",
+      "label": "Development — Building",
+      "bars": "17–24",
+      "tips": [
+        "📈 This section builds intensity — let it grow slightly louder",
+        "🎵 The melody climbs: C → E → G → c (rising an octave)",
+        "⚡ Feel the energy gather — the emotional peak is near"
+      ],
+      "abc": "X:1\nT:Clair de Lune — Development\nC:Debussy (simplified arrangement)\nM:3/4\nL:1/4\nQ:1/4=52\nK:C\n%%MIDI program 0\nC E G | c2 B | A c e | d3 |\nB d f | e2 c | A F D | C3 |]"
+    },
+    {
+      "id": "s4",
+      "label": "Return — Like a Memory",
+      "bars": "25–32",
+      "tips": [
+        "🌙 The opening theme returns — more tender now, like a fading memory",
+        "🎵 Back to very soft and gentle — even quieter than the opening",
+        "💭 Debussy wanted this to feel like recalling a half-remembered dream"
+      ],
+      "abc": "X:1\nT:Clair de Lune — Return\nC:Debussy (simplified arrangement)\nM:3/4\nL:1/4\nQ:1/4=46\nK:C\n%%MIDI program 0\nG2 E | G2 E | F2 D | F3 |\nE2 C | E2 C | D3 | C3 |]"
+    },
+    {
+      "id": "s5",
+      "label": "Closing — The Moon Sets",
+      "bars": "33–40",
+      "tips": [
+        "🌅 The piece fades like moonlight at dawn — very slow, very quiet",
+        "🎵 Let the final C ring completely and decay on its own — don't rush to lift your hand",
+        "🎹 You've played Clair de Lune. That is genuinely remarkable."
+      ],
+      "abc": "X:1\nT:Clair de Lune — Closing\nC:Debussy (simplified arrangement)\nM:3/4\nL:1/4\nQ:1/4=42\nK:C\n%%MIDI program 0\nG2 E | F2 D | E2 C | C3 |\nz G2 | z E2 | z C2 | C6 |]"
+    }
+  ]
+}
