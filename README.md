@@ -20,6 +20,18 @@ A free, subscription-free piano learning web app. Breaks songs into sections, di
 
 ---
 
+## Run Locally
+
+To test and play songs on your computer without deploying:
+
+```bash
+node server.js
+```
+
+Then open your browser to **[http://localhost:3000](http://localhost:3000)**.
+
+---
+
 ## Deploy on Your Linux Server
 
 ### Prerequisites
