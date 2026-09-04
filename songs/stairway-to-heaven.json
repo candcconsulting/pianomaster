@@ -4,66 +4,66 @@
   "composer": "Jimmy Page & Robert Plant / Led Zeppelin",
   "year": "1971",
   "difficulty": 2,
-  "emoji": "🪜",
+  "emoji": "\ud83e\ude9c",
   "color": "#059669",
-  "description": "The world's most famous acoustic intro and haunting verse melody, arranged for two hands (Grand Staff). Left hand walks the iconic chromatic bassline while the right hand arpeggiates the climbing chords.",
-  "generalTip": "Key of A minor. Left hand plays the legendary descending bass (A -> G# -> G -> F# -> F -> G -> A), creating the spine-chilling harmony with the right hand.",
-  "fullAbc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [c2e2] a2 [c2e2] b2 | [c2e2] c'2 [d2a2] d'2 |\n[V:LH] A,4 ^G,4 | =G,4 ^F,4 |\n[V:RH] [c2e2] c'2 [B2d2] b2 | [c8e8a8] |\n[V:LH] =F,4 G,4 | A,8 |\n[V:RH] z4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |\n[V:LH] A,8 | ^G,8 | =G,8 | ^F,8 |\n[V:RH] z2 c d e4 | d2 c2 B2 A2 | A8 |\n[V:LH] =F,8 | G,8 | A,8 |\n[V:RH] z4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]\n[V:LH] A,8 | ^G,8 | =G,8 | =F,8 | G,8 | A,8 |]",
+  "description": "The authentic note-for-note fingerpicked acoustic guitar intro (A-C-E-A...) and Robert Plant's timeless verse melody (\"There's a lady who's sure\").",
+  "generalTip": "Key of A minor. The acoustic intro is fingerpicked note-by-note: A, -> C -> E -> a, then the chromatic bass walks down (G# -> G -> F# -> F) while the soprano notes soar.",
+  "fullAbc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=76\nK:Am\n%%MIDI program 24\nA, C E a [^G,b] C E b | [=G,c'] E G c' [^F,^f] D A, D |\n[F,Ace] c A e e c A [G,Bd] | [A,EAc]8 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |\nz2 c d e4 | d2 c2 B2 A2 | A8 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]",
   "sections": [
     {
       "id": "s1",
-      "label": "The Iconic Arpeggio",
-      "bars": "1–2",
+      "label": "The Iconic Acoustic Arpeggio",
+      "bars": "1\u20132",
       "tips": [
-        "🪜 The legendary opening: Left hand descends (A -> G# -> G -> F#) while Right hand climbs (A -> B -> C -> D)!",
-        "🎹 Left hand: A, to G# (black key) then G, to F# (black key)",
-        "👆 Right hand: C-E rolls into high a, high b, high c', and high d'"
+        "\ud83c\udfb8 The unmistakable acoustic fingerpicking \u2014 Jimmy Page's legendary opening!",
+        "\ud83d\udc46 Bar 1: A, -> C -> E -> a, then thumb on G# (bass) with pinky on b, followed by C -> E -> b",
+        "\u2728 Bar 2: G (bass) with c' -> E -> G -> c', then F# (bass) with f# -> D -> A, -> D"
       ],
-      "abc": "X:1\nT:Stairway to Heaven — The Iconic Arpeggio\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [c2e2] a2 [c2e2] b2 | [c2e2] c'2 [d2a2] d'2 |]\n[V:LH] A,4 ^G,4 | =G,4 ^F,4 |]"
+      "abc": "X:1\nT:Stairway to Heaven \u2014 The Iconic Arpeggio\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=76\nK:Am\n%%MIDI program 24\nA, C E a [^G,b] C E b | [=G,c'] E G c' [^F,^f] D A, D |]"
     },
     {
       "id": "s2",
       "label": "The Resolution",
-      "bars": "3–4",
+      "bars": "3\u20134",
       "tips": [
-        "🍃 The gentle descent and home resolution",
-        "🎹 Left hand: F, to G, then lands home on A,",
-        "👆 Right hand: c' to b to rich Am home chord [C-E-A]"
+        "\ud83c\udf43 The gentle release: Fmaj7 rolling into G and landing home on Am",
+        "\ud83d\udc46 Bar 3: Strum/roll [F,Ace] then pluck c -> A -> e, then e -> c -> A into [G,Bd]",
+        "\ud83c\udfc1 Bar 4: Settle warmly into the full Am chord [A,EAc]"
       ],
-      "abc": "X:1\nT:Stairway to Heaven — The Resolution\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [c2e2] c'2 [B2d2] b2 | [c8e8a8] |]\n[V:LH] =F,4 G,4 | A,8 |]"
+      "abc": "X:1\nT:Stairway to Heaven \u2014 The Resolution\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=76\nK:Am\n%%MIDI program 24\n[F,Ace] c A e e c A [G,Bd] | [A,EAc]8 |]"
     },
     {
       "id": "s3",
       "label": "\"All That Glitters\"",
-      "bars": "5–8",
+      "bars": "5\u20138",
       "tips": [
-        "🎤 \"There's a lady who's sure all that glitters is gold\"",
-        "👆 Right hand plays Robert Plant's melody with A-B pickup",
-        "🎹 Left hand holds resonant bass whole notes under each phrase"
+        "\ud83c\udfa4 Robert Plant's voice enters: \"There's a lady who's sure all that glitters is gold\"",
+        "\ud83d\udc46 Right hand leads with pickup notes A B climbing into C -> E, then stepping down B A B",
+        "\ud83c\udfb9 Left hand anchors the phrase with steady bass whole notes"
       ],
-      "abc": "X:1\nT:Stairway to Heaven — All That Glitters\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] z4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |]\n[V:LH] A,8 | ^G,8 | =G,8 | ^F,8 |]"
+      "abc": "X:1\nT:Stairway to Heaven \u2014 All That Glitters\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=76\nK:Am\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] z4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |]\n[V:LH] A,8 | ^G,8 | =G,8 | ^F,8 |]"
     },
     {
       "id": "s4",
       "label": "\"Stairway to Heaven\"",
-      "bars": "9–14",
+      "bars": "9\u201314",
       "tips": [
-        "🕊️ \"And she's buying a stairway to heaven... with a word she can get what she came for\"",
-        "🎶 C-D steps up to high E, resolving softly down to A",
-        "🎹 Left hand brings the full rich harmony to life"
+        "\ud83d\udd4a\ufe0f \"And she's buying a stairway to heaven... with a word she can get what she came for\"",
+        "\ud83c\udfb6 C-D steps up to high E, resolving softly down to A",
+        "\u2728 Full rich two-handed harmony"
       ],
-      "abc": "X:1\nT:Stairway to Heaven — The Vocal Melody\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] z2 c d e4 | d2 c2 B2 A2 | A8 | z4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]\n[V:LH] =F,8 | G,8 | A,8 | A,8 | ^G,8 | =G,8 | =F,8 | G,8 | A,8 |]"
+      "abc": "X:1\nT:Stairway to Heaven \u2014 The Vocal Melody\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=76\nK:Am\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] z2 c d e4 | d2 c2 B2 A2 | A8 | z4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]\n[V:LH] =F,8 | G,8 | A,8 | A,8 | ^G,8 | =G,8 | =F,8 | G,8 | A,8 |]"
     },
     {
       "id": "s5",
       "label": "Full Song Performance",
-      "bars": "1–14",
+      "bars": "1\u201314",
       "tips": [
-        "🎸 The complete two-handed performance: intro arpeggios flowing right into the verse!",
-        "🎵 Keep a steady, soulful tempo at 72 BPM",
-        "🎉 You are playing Stairway to Heaven with full two-hand harmony!"
+        "\ud83c\udfb8 Play the authentic fingerpicked acoustic intro directly into the full verse!",
+        "\ud83c\udfb5 Keep a steady, soulful tempo at 76 BPM",
+        "\ud83c\udf89 The complete, unmistakable performance of rock history's greatest song."
       ],
-      "abc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=72\nK:Am\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [c2e2] a2 [c2e2] b2 | [c2e2] c'2 [d2a2] d'2 |\n[V:LH] A,4 ^G,4 | =G,4 ^F,4 |\n[V:RH] [c2e2] c'2 [B2d2] b2 | [c8e8a8] |\n[V:LH] =F,4 G,4 | A,8 |\n[V:RH] z4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |\n[V:LH] A,8 | ^G,8 | =G,8 | ^F,8 |\n[V:RH] z2 c d e4 | d2 c2 B2 A2 | A8 |\n[V:LH] =F,8 | G,8 | A,8 |\n[V:RH] z4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]\n[V:LH] A,8 | ^G,8 | =G,8 | =F,8 | G,8 | A,8 |]"
+      "abc": "X:1\nT:Stairway to Heaven (Full Theme)\nC:Led Zeppelin\nM:4/4\nL:1/8\nQ:1/4=76\nK:Am\n%%MIDI program 24\nA, C E a [^G,b] C E b | [=G,c'] E G c' [^F,^f] D A, D |\n[F,Ace] c A e e c A [G,Bd] | [A,EAc]8 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 A B c2 d2 | c4 d4 |\nz2 c d e4 | d2 c2 B2 A2 | A8 |\nz4 z2 A B | c4 e4 | B2 A2 B4 | z2 c d e4 | d2 c2 B2 c2 | A8 |]"
     }
   ]
 }

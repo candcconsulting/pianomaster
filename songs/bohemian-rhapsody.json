@@ -4,66 +4,66 @@
   "composer": "Freddie Mercury / Queen",
   "year": "1975",
   "difficulty": 2,
-  "emoji": "👑",
+  "emoji": "\ud83d\udc51",
   "color": "#d97706",
   "description": "Queen's timeless masterpiece arranged for two hands (Grand Staff) in the original key of Bb major. Includes the legendary piano intro vamp and Freddie's vocal ballad melody.",
   "generalTip": "Play with both hands! Left hand plays the supporting bass roots while the right hand plays the iconic piano vamp and vocal melody. Key of Bb (Bb and Eb).",
-  "fullAbc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [D2F2B2] [D2F2B2] [D2F2B2] [D2F2B2] | [C2F2A2] [C2F2A2] [C2F2A2] [C2F2A2] | [D2G2B2] [D2G2B2] [D2G2B2] [D2G2B2] | [C4E4G4B4] [C4F4A4] |\n[V:LH] B,,8 | F,,8 | G,,8 | C,4 F,,4 |\n[V:RH] F6 G2 | F2 E2 D4- | D2 z2 D2 E2 | G2 G G F2 E F | G2 F F F4 |\n[V:LH] B,,8 | G,,8 | C,8 | F,,8 | B,,8 |\n[V:RH] F6 D F | B4- B2 z F | B B B B A2 B2 | c8 |\n[V:LH] B,,8 | G,,8 | C,8 | F,,8 |\n[V:RH] E6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |\n[V:LH] E,8 | B,,8 | G,,8 | C,8 |\n[V:RH] C D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]\n[V:LH] _A,,8 | E,8 | B,,8 | F,,8 |]",
+  "fullAbc": "X:1\nT:Bohemian Rhapsody (Full Theme)\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [F2B2d2] [F2B2d2] [F2B2d2] [F2B2d2] | [F2A2c2] [F2A2c2] [F2A2c2] [F2A2c2] | [G2B2d2] [G2B2d2] [G2B2d2] [G2B2d2] | [E4G4B4c4] [F4A4c4] |\n[V:LH] B,8 | F,8 | G,8 | C,4 F,4 |\n[V:RH] F6 G2 | F2 E2 D4- | D2 z2 D2 E2 | G2 G G F2 E F | G2 F F F4 |\n[V:LH] B,8 | G,8 | C,8 | F,8 | B,8 |\n[V:RH] F6 D F | B4- B2 z F | B B B B A2 B2 | c8 |\n[V:LH] B,8 | G,8 | C,8 | F,8 |\n[V:RH] E6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |\n[V:LH] E,8 | B,8 | G,8 | C,8 |\n[V:RH] C D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]\n[V:LH] _A,8 | E,8 | B,8 | F,8 |]",
   "sections": [
     {
       "id": "s1",
       "label": "The Iconic Piano Intro Vamp",
-      "bars": "1–4",
+      "bars": "1\u20134",
       "tips": [
-        "👑 The most famous piano intro in rock history!",
-        "🎹 Left hand holds resonant bass notes (Bb -> F -> G -> C -> F)",
-        "👆 Right hand rocks the four-note chords: Bb (D-F-Bb) -> F (C-F-A) -> Gm (D-G-Bb) -> C7 into F"
+        "\ud83d\udc51 Freddie Mercury's legendary piano intro in the original key of Bb major!",
+        "\ud83c\udfb9 Left hand: Resonant bass notes (Bb2 -> F2 -> G2 -> C3 -> F2) right on the Casio keyboard",
+        "\ud83d\udc46 Right hand: Freddie's 4-chord piano vamp: Bb (F-Bb-D) -> F (F-A-C) -> Gm (G-Bb-D) -> C7 into F"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — The Iconic Piano Intro\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [D2F2B2] [D2F2B2] [D2F2B2] [D2F2B2] | [C2F2A2] [C2F2A2] [C2F2A2] [C2F2A2] | [D2G2B2] [D2G2B2] [D2G2B2] [D2G2B2] | [C4E4G4B4] [C4F4A4] |]\n[V:LH] B,,8 | F,,8 | G,,8 | C,4 F,,4 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody \u2014 The Iconic Piano Intro\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] [F2B2d2] [F2B2d2] [F2B2d2] [F2B2d2] | [F2A2c2] [F2A2c2] [F2A2c2] [F2A2c2] | [G2B2d2] [G2B2d2] [G2B2d2] [G2B2d2] | [E4G4B4c4] [F4A4c4] |]\n[V:LH] B,8 | F,8 | G,8 | C,4 F,4 |]"
     },
     {
       "id": "s2",
       "label": "\"Mama, just killed a man\"",
-      "bars": "5–9",
+      "bars": "5\u20139",
       "tips": [
-        "🎤 Freddie's iconic vocal enters: \"Mama, just killed a man\"",
-        "👆 Right hand: F steps up to G on \"just\", down to Eb and D on \"killed a man\"",
-        "🎹 Left hand: steady bass roots support the voice (Bb -> Gm -> Cm -> F -> Bb)"
+        "\ud83c\udfa4 Freddie's iconic vocal enters: \"Mama, just killed a man\"",
+        "\ud83d\udc46 Right hand: F steps up to G on \"just\", then down to Eb and D on \"killed a man\"",
+        "\ud83c\udfb9 Left hand: Steady root bass accompaniment (Bb -> Gm -> Cm -> F -> Bb)"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Just Killed a Man\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] F6 G2 | F2 E2 D4- | D2 z2 D2 E2 | G2 G G F2 E F | G2 F F F4 |]\n[V:LH] B,,8 | G,,8 | C,8 | F,,8 | B,,8 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody \u2014 Mama, Just Killed a Man\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] F6 G2 | F2 E2 D4- | D2 z2 D2 E2 | G2 G G F2 E F | G2 F F F4 |]\n[V:LH] B,8 | G,8 | C,8 | F,8 | B,8 |]"
     },
     {
       "id": "s3",
       "label": "\"Life had just begun\"",
-      "bars": "10–13",
+      "bars": "10\u201313",
       "tips": [
-        "🕊️ \"Mama, life had just begun, but now I've gone and thrown it all away\"",
-        "👆 Right hand: F D F leaps up to high Bb, then four rapid repeated Bb notes into high C",
-        "🎹 Left hand: supportive bass walk Bb -> Gm -> Cm -> F"
+        "\ud83d\udd4a\ufe0f \"Mama, life had just begun, but now I've gone and thrown it all away\"",
+        "\ud83d\udc46 Right hand: F D F leaps up to high Bb, then four repeated Bb notes into high C",
+        "\ud83c\udfb9 Left hand: Supportive bass walk Bb -> Gm -> Cm -> F"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Life Had Just Begun\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] F6 D F | B4- B2 z F | B B B B A2 B2 | c8 |]\n[V:LH] B,,8 | G,,8 | C,8 | F,,8 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody \u2014 Life Had Just Begun\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] F6 D F | B4- B2 z F | B B B B A2 B2 | c8 |]\n[V:LH] B,8 | G,8 | C,8 | F,8 |]"
     },
     {
       "id": "s4",
       "label": "\"Mama, ooh...\"",
-      "bars": "14–17",
+      "bars": "14\u201317",
       "tips": [
-        "💧 \"Mama, ooh, didn't mean to make you cry\"",
-        "🖤 Right hand: Eb into F and F# (^F): the famous weeping motif resolving to G",
-        "🎹 Left hand: rich chord changes on Eb -> Bb -> Gm -> Cm"
+        "\ud83d\udca7 \"Mama, ooh, didn't mean to make you cry\"",
+        "\ud83d\udda4 Right hand: Eb into F and F# (^F): the weeping phrase resolving to G",
+        "\ud83c\udfb9 Left hand: Rich chord progression on Eb -> Bb -> Gm -> Cm"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Mama, Ooh...\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] E6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |]\n[V:LH] E,8 | B,,8 | G,,8 | C,8 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody \u2014 Mama, Ooh...\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] E6 F ^F | G4- G2 z G | G2 F2 E2 D2 | C8 |]\n[V:LH] E,8 | B,8 | G,8 | C,8 |]"
     },
     {
       "id": "s5",
       "label": "\"Carry on\" & Outro",
-      "bars": "18–21",
+      "bars": "18\u201321",
       "tips": [
-        "💪 \"If I'm not back again this time tomorrow, carry on, carry on\"",
-        "👆 Right hand: uplifting D-Bb motif into the quiet reflective outro",
-        "🏁 Resolves softly on the home key of Bb"
+        "\ud83d\udcaa \"If I'm not back again this time tomorrow, carry on, carry on\"",
+        "\ud83d\udc46 Right hand: Uplifting D-Bb motif into the quiet reflective outro",
+        "\ud83c\udfc1 Resolves softly on the home key of Bb"
       ],
-      "abc": "X:1\nT:Bohemian Rhapsody — Carry On & Outro\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] C D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]\n[V:LH] _A,,8 | E,8 | B,,8 | F,,8 |]"
+      "abc": "X:1\nT:Bohemian Rhapsody \u2014 Carry On & Outro\nC:Freddie Mercury / Queen\nM:4/4\nL:1/8\nQ:1/4=72\nK:Bb\n%%staves {(RH) (LH)}\nV:RH clef=treble\nV:LH clef=bass\n[V:RH] C D E E E E D C | B,2 C6 | D2 B,2 D2 B,2 | C B, A, G, F,4 |]\n[V:LH] _A,8 | E,8 | B,8 | F,8 |]"
     }
   ]
 }
